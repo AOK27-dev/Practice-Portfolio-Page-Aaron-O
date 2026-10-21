@@ -8,46 +8,50 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My Portfolio Page.</h1>
-        <em>This is my first portfolio.</em>
+    <header class="site-header">
+        <div class="site-header__top">
+            <h1>Welcome to My Portfolio Page.</h1>
+        </div>
+        <div class="site-header__bottom">
+            <em>This is my first portfolio.</em>
+        </div>
     </header>
-    <section class="introduction">
-        <div>
-           <h2>About Me...</h2>
-         <p>My name is Aaron O'Keeffe. I am 26 years old and am curently employed as a full-time IT consultant. <br>I am also learning to code in Javascript on the side. 
-         I aspire to become a software developer one day.<br>I do not have any previous coding experience however, I am determined to learn the skills I need to succeed.
-         </p> 
-        </div>
+<section class="introduction">
+    <div>
+        <h2>About Me...</h2>
+            <p>My name is Aaron O'Keeffe. I am 26 years old and am curently employed as a full-time IT consultant. <br>I am also learning to code in Javascript on the side. 
+            I aspire to become a software developer one day.<br>I do not have any previous coding experience however, I am determined to learn the skills I need to succeed.
+            </p> 
+    </div>
 
-        <div>
-            <figure class="profile__pic">
-            <img src="/images/ThumbsUp.avif" alt="Business man giving Thumbs up.">
-            </figure>
-        </div>
-    </section>
-    <section>
-        <h2>My Skills:</h2>
-         <div>
-            <table border="1">
-                <caption>Acquired Skills:</caption>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Proficiency</th>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>3/10</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>1/10</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>0/10</td>
-                    </tr>
-            </table>
+    <div>
+        <figure class="profile__pic">
+        <img src="/images/ThumbsUp.avif" alt="Business man giving Thumbs up.">
+        </figure>
+    </div>
+</section>
+<section>
+    <h2>My Skills:</h2>
+        <div class="skill-table">
+        <table border="1">
+            <caption>Acquired Skills:</caption>
+                <tr>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>4/10</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>3/10</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>1/10</td>
+                </tr>
+        </table>
         </div>
     </section>
  
@@ -58,8 +62,7 @@
 
     <section id="contact">
         <h3>Leave Me a Message</h3>
-
-            <form action ="/contact" method="post">
+        <form action ="/contact" method="post">
         <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -74,8 +77,9 @@
             <label for="comments">Additional comments: </label>
             <textarea id="comments" name="comments" rows="5" placeholder="Anything you'd like me to know..."></textarea>
         </div>
+        <button type="submit">Send Message</button>
     </form>
-</section>
+    </section>
 </body>
 <footer>
 <p>&copy; Intellectual Property of Aaron O'Keeffe</p>

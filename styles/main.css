@@ -9,6 +9,8 @@
 body {
     background-color: #ddedfd;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
@@ -20,6 +22,39 @@ header {
     text-align: center;
 }
 
+img {
+    display: block;
+    height: auto;
+    max-width: 200px;
+    width: 100%;
+}
+
+a {
+    color: rgb(0, 0, 226);
+}
+
+a:hover { 
+    color: purple;
+}
+
+a:visited {
+    color: rgb(0, 0, 226);
+}
+
+.introduction {
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    gap: 20px;
+    margin: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+.profile__pic {
+    padding: 20px
+}
+
 h2 {
     color: #001368;
     margin-top: 0;
@@ -29,19 +64,45 @@ p, h2, h3, img{
     margin-bottom: 1em;
 }
 
-.profile__pic {
-    width: 200px;
-    height: 200px;
-    vertical-align: middle;
-}
-
-img{
-    width: 100px
-}
-
 #social {
     background-color: #e5e5e6;
     padding: 20px;
     border: solid 2px #000000;
     text-align: center;
+}
+
+#contact {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#contact h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4a7bd0;
+    box-shadow: 0 0 0 3px rgba(74, 123, 208, 0.2);
 }
