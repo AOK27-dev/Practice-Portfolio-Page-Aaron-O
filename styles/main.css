@@ -20,6 +20,13 @@ header {
     padding: 20px;
     border-bottom: 3px solid #001368;  
     text-align: center;
+    font-family: instrument-serif-original
+}
+
+.page-shell{
+    max-width: 1120px;
+    margin: 0;
+    padding: 1rem 0;
 }
 
 img {
@@ -60,8 +67,20 @@ h2 {
     margin-top: 0;
 }
 
-p, h2, h3, img{
+p, h2, img{
     margin-bottom: 1em;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+#table1 {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    display:
 }
 
 #social {
@@ -80,7 +99,7 @@ p, h2, h3, img{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-#contact h3 {
+#contact h2 {
     text-align: center;
     margin-bottom: 20px;
 }
